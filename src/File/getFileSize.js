@@ -4,7 +4,7 @@
  * @param {Number} toFixedNum 保留几位小数
  * @returns
  */
- export default getFileSize = (size, toFixedNum = 1) => {
+ const getFileSize = (size, toFixedNum = 1) => {
     if (!size) return '0 B'
   
     const s = 1024
@@ -21,3 +21,5 @@
   
     return size + sizes[i]
   }
+
+  export default getFileSize

@@ -25,7 +25,8 @@ if (process.argv[3]) {
 console.log(newVersion);
 
 function publish() {
-  shelljs.sed("-i", '"name": "sven-utils"', '"name": "sven-utils"', targetFile); // 修改包名
+  try{
+    shelljs.sed("-i", '"name": "sven-utils"', '"name": "sven-utils"', targetFile); // 修改包名
   shelljs.sed(
     "-i",
     `"version": "${currentVersion}"`,
@@ -34,6 +35,9 @@ function publish() {
   ); // 修改版本号
   shelljs.cd("dist");
   shelljs.exec("npm publish"); // 发布
+  }catch(e){
+    console.log(e)
+  }
 }
 
 publish();

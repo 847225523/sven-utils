@@ -2,7 +2,7 @@
  复制
  @param {String} str 字符串
 */
-export default clipboard = (str) => {
+const clipboard = (str) => {
   return new Promise((resolve) => {
     const input = document.createElement("input");
     input.value = str;
@@ -21,3 +21,5 @@ export default clipboard = (str) => {
     });
   });
 };
+
+export default clipboard

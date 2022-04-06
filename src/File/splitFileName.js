@@ -3,7 +3,7 @@
  * @param {String} fileName  文件名
  * @returns [前缀名, 后缀名]
  */
-export default splitFileName = (fileName = "") => {
+const splitFileName = (fileName = "") => {
   const lastDotIndex = fileName.lastIndexOf(".");
   if (lastDotIndex === -1) {
     return "";
@@ -12,3 +12,6 @@ export default splitFileName = (fileName = "") => {
   const prefixName = fileName.substr(0, lastDotIndex);
   return [prefixName, extName];
 };
+
+
+export default  splitFileName

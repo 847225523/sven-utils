@@ -6,7 +6,7 @@
  * @param {string} [fileName=''] 文件名
  * @param {boolean} [isDirectly=false] 是否直接下载
  */
-export default function downloadFile (url = "", fileName = "", isDirectly = false) {
+ function downloadFile (url = "", fileName = "", isDirectly = false) {
   const el = document.createElement("iframe");
   el.style = "position:fixed;height:0;width:0;";
 
@@ -22,3 +22,6 @@ export default function downloadFile (url = "", fileName = "", isDirectly = fals
   }, 2000);
 }
 
+
+
+export default downloadFile
