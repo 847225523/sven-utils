@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy": "cp package.json README.md dist",
     "build": "rollup -c && npm run copy",
-    "publish":"node scripts/publish.js",
-    "comment":"上边copy命令是把package.json README.md文件复制dist目录"
+    "publish": "node scripts/publish.js",
+    "comment": "上边copy命令是把package.json README.md文件复制dist目录"
   },
   "repository": {
     "type": "git",
@@ -32,5 +32,8 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "shelljs": "^0.8.5"
+  },
+  "dependencies": {
+    "moment": "^2.29.2"
   }
 }

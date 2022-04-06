@@ -1,5 +1,10 @@
-import isColor from './isColor'
-
+import {getCurrentDate,formatDate} from './Date'
+import { clipboard,downlandFile,getFileSize,splitFileName } from './File'
 export  {
-    isColor
+    getCurrentDate,
+    formatDate,
+    clipboard,
+    downlandFile,
+    getFileSize,
+    splitFileName
 }
