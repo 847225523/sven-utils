@@ -22,6 +22,11 @@
   "author": "zhw",
   "license": "ISC",
   "browser": "dist/index.js",
+  "files":[
+    "index.js",
+    "package.json",
+    "README.md"
+  ],
   "bugs": {
     "url": "https://github.com/847225523/sven-utils/issues"
   },
